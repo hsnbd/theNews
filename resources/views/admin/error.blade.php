@@ -1,6 +1,5 @@
+@if(Session::has('message') || $errors->any())
 <script src="/admin-themes/js/bootstrap-notify.min.js"></script>
-
-
 
 @if(Session::has('message'))
 
@@ -10,7 +9,7 @@
     	message: "{{ Session::get('message') }}"
     },{
     	type: 'info',
-      delay: 3000,
+      delay: 1000,
       mouse_over: 'pause',
       newest_on_top: true,
       animate: {
@@ -18,12 +17,14 @@
     		exit: 'animated fadeOutRight'
     	}
     });
+    setTimeout(function(){
+      location = ''
+    },3000)
 </script>
-
-    @php
-      Session::forget('message');
-    @endphp
-  @endif
+@php
+  Session::forget('message');
+@endphp
+@endif
 
 
 
@@ -45,4 +46,5 @@
   });
   @endforeach
 </script>
+@endif
 @endif

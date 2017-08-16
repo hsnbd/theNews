@@ -1,0 +1,24 @@
+.videos {
+    background: #e4e4e4;
+    padding: 1.8em 1em 0.5em 1em;
+    height: 377px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 3px;  /* remove scrollbar space */
+    background: #ccc;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+ul.comment-list {
+border: none;
+}

@@ -278,6 +278,7 @@ class ComposerStaticInitd5516ff422e2a48730b8f0381bb9bf5a
 
     public static $classMap = array (
         'App\\Categories' => __DIR__ . '/../..' . '/app/Categories.php',
+        'App\\Comments' => __DIR__ . '/../..' . '/app/Comments.php',
         'App\\Console\\Commands\\foo' => __DIR__ . '/../..' . '/app/Console/Commands/foo.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
@@ -291,6 +292,7 @@ class ComposerStaticInitd5516ff422e2a48730b8f0381bb9bf5a
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\NewsController' => __DIR__ . '/../..' . '/app/Http/Controllers/NewsController.php',
+        'App\\Http\\Controllers\\PublicNewsController' => __DIR__ . '/../..' . '/app/Http/Controllers/PublicNewsController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
@@ -307,6 +309,7 @@ class ComposerStaticInitd5516ff422e2a48730b8f0381bb9bf5a
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
         'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_28_110646_create_categories_table.php',
+        'CreateCommentsTable' => __DIR__ . '/../..' . '/database/migrations/2017_08_16_043738_create_comments_table.php',
         'CreateNewsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_29_161728_create_news_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',

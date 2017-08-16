@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Gentelella Alela! | </title>
+    <link rel="shortcut icon" type="image/ico" href="/admin-themes/images/back_enabled.ico"/>
+    <title>{{!empty($title)? "The News | " . $title: "The News | The World Class News Paper"}}</title>
 
     <!-- Bootstrap -->
     <link href="/admin-themes/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -287,6 +287,7 @@
 @yield('content')
 
 @include('admin.error')
+
 
 
 

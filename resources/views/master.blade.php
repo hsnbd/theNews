@@ -2,10 +2,12 @@
 <html>
 
 <head>
+	<link rel="shortcut icon" type="image/ico" href="/admin-themes/images/back_enabled.ico"/>
 	<title>The News Reporter a Magazine Category Flat Bootstarp Responsive Website Template| Home :: w3layouts</title>
 	<link href="/main-themes/css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<!-- Custom Theme files -->
 	<link href="/main-themes/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/main-themes/css/my_style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Custom Theme files -->
 	<script src="/main-themes/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/main-themes/js/jquery.leanModal.min.js"></script>
@@ -36,7 +38,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="header">
 				<div class="header-left">
 					<div class="logo">
-						<a href="index.html">
+						<a href="/">
 							<h6>the</h6>
 							<h1>News <span>Reporter</span></h1>
 						</a>
@@ -72,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="header-right">
 					<div class="top-menu">
 						<ul>
-							<li><a href="index.html">Home</a></li> |
+							<li><a href="/">Home</a></li> |
 							<li><a href="about.html">About Us</a></li> |
 							<li><a href="contact.html">Contact Us</a></li> |
 
@@ -292,7 +294,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<span class="menu"></span>
 			<div class="menu-strip">
 				<ul>
-					<li><a href="index.html">worldnews</a></li>
+					<li><a href="/">worldnews</a></li>
 					<li><a href="sports.html">sports</a></li>
 					<li><a href="tech.html">tech</a></li>
 					<li><a href="business.html">business</a></li>
@@ -338,42 +340,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				<div class="col-md-3 side-bar">
 					<div class="videos">
+@if(!empty($allData))
+@foreach ($allData[0] as $i => $sNews)
 						<div class="video-grid">
 							<div class="video">
-								<a href="single.html"><i class="play"></i></a>
+								<a href="/news/show/{{$sNews->id}}?l={{$sNews->news_link}}">
+									<img src="/news/images/{{$sNews->id}}_cover_image.jpg" width="40">
+								</a>
 							</div>
 							<div class="video-name">
-								<a href="single.html">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a>
+								<a href="/news/show/{{$sNews->id}}?l={{$sNews->news_link}}">
+									{{str_limit($sNews->title, $limit = 20, $end = '...')}}
+								</a>
 							</div>
 							<div class="clearfix"></div>
 						</div>
-						<div class="video-grid">
-							<div class="video">
-								<a href="single.html"><i class="play"></i></a>
-							</div>
-							<div class="video-name">
-								<a href="single.html">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="video-grid">
-							<div class="video">
-								<a href="single.html"><i class="play"></i></a>
-							</div>
-							<div class="video-name">
-								<a href="single.html">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-						<div class="video-grid">
-							<div class="video">
-								<a href="single.html"><i class="play"></i></a>
-							</div>
-							<div class="video-name">
-								<a href="single.html">Lorem ipsum dolor sit amet conse ctetur adipiscing elit</a>
-							</div>
-							<div class="clearfix"></div>
-						</div>
+@endforeach
+@endif
 						<a class="more1" href="single.html">More  +</a>
 						<div class="clearfix"></div>
 					</div>
@@ -440,7 +423,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="footer text-center">
 				<div class="bottom-menu">
 					<ul>
-						<li><a href="index.html">World  News</a></li> |
+						<li><a href="/">World  News</a></li> |
 						<li><a href="sports.html">Sports</a></li> |
 						<li><a href="tech.html">Techology</a></li> |
 						<li><a href="business.html">Business</a></li> |

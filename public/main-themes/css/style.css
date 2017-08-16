@@ -14,6 +14,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     font-weight: normal;
     font-style: normal;
 }
+
+
+
+
+
 body{
 	padding:0;
 	margin:0;
@@ -1200,13 +1205,13 @@ img.code{
 	font-size:0.95em;
 }
 .best-review {
-	border-top: 3px solid #000;
+	border-top: 1px solid #ddd;
 	padding: 1.5em 0;
 }
 .story-review {
-	border-top: 3px solid #000;
+	border-top: 1px solid #ddd;
 	padding: 1.5em 0;
-	border-bottom: 3px solid #000;
+	border-bottom: 1px solid #ddd;
 }
 .story-review h4 {
 	color:#000;
@@ -1524,9 +1529,9 @@ ul.comment-list img {
   margin-bottom: 4px;
 }
 .msingle-grid p {
-  font-size: 0.92em;
-  color: rgb(155, 155, 155);
-  line-height: 1.8em;
+    font-size: 1em;
+    color: rgb(144, 140, 140);
+    line-height: 1.8em;
 }
 .singlepage p {
   float: none;
@@ -1555,13 +1560,13 @@ ul.comment-list img {
 	font-size:0.95em;
 }
 .best-review {
-	border-top: 3px solid #000;
+	border-top: 1px solid #ddd;
 	padding: 1.5em 0;
 }
 .story-review {
-	border-top: 3px solid #000;
+	border-top: 1px solid #ddd;
 	padding: 1.5em 0;
-	border-bottom: 3px solid #000;
+	border-bottom: 1px solid #ddd;
 }
 .story-review h4 {
 	margin-bottom:0.7em;

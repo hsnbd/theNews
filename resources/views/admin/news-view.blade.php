@@ -26,6 +26,12 @@
       <div class="">
         <div class="page-title">
           <div class="title_left">
+
+@foreach($getNews as $news)
+            <a href="/admin">Admin</a>
+            <a href="/admin/news"> > News</a>
+            <a href="{{URL::route('news.show', ['l' => $news->news_link, 'id' => $news->id,])}}"> > {{$news->title}}</a><br />
+
             <h3 style="display:inline-block;">Today's News &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  </h3>
 
             <a href="/admin/news/new" class="btn btn-sm btn-info">Create New News</a>
@@ -49,7 +55,7 @@
         <div class="x_content">
 
 
-@foreach($getNews as $news)
+
             <div class="col-md-12 news-item">
 
                 <div class="status row">
@@ -66,7 +72,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <a href=""><i class="fa fa-edit"></i> Edit News</a>
+                        <a href="{{URL::route('news.edit', ['l' => $news->news_link, 'id' => $news->id,])}}"><i class="fa fa-edit"></i> Edit News</a>
                         &nbsp;
                         &nbsp;
                         &nbsp;

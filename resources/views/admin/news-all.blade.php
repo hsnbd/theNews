@@ -22,6 +22,10 @@
       <div class="">
         <div class="page-title">
           <div class="title_left">
+            <a href="/admin">Admin</a>
+            <a href="/admin/news"> > News</a><br />
+
+
             <h3 style="display:inline-block;">Today's News &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  </h3>
 
             <a href="{{URL::route('news.create')}}" class="btn btn-sm btn-info">Create New News</a>
@@ -62,7 +66,7 @@
 
                       @foreach($allNews as $news)
                             <div class="col-md-4 news-item">
-                                <a href="{{URL::route('news.show', ['news_link' => $news->news_link, 'id' => $news->id,])}}">
+                                <a href="{{URL::route('news.show', ['l' => $news->news_link, 'id' => $news->id,])}}">
                                     <img src="/news/images/{{$news->id}}_cover_image.jpg" alt="Generic placeholder image">
                                     <h4>{{str_limit($news->title, $limit = 40, $end = '...')}}</h4>
                                     <p>{!!str_limit(strip_tags(File::get("news/file/{$news->id}_news.txt")), $limit = 200, $end = '<span style="color:blue">...Click To Read More</span>')!!}</p>

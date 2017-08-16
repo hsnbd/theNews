@@ -25,6 +25,10 @@
       <div class="">
         <div class="page-title">
           <div class="title_left">
+            <a href="/admin">Admin</a>
+            <a href="/admin/news"> > News</a>
+            <a href="/admin/news/new"> > New</a><br />
+
             <h3 style="display:inline-block;">Create New News &nbsp;&nbsp;&nbsp; |  &nbsp;&nbsp;&nbsp;  </h3>
 
             <a href="/admin/news" class="btn btn-sm btn-info">View Today's News</a>
